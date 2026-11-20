@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <h1>🌍 Country Explorer</h1>
+    <p class="sub">Search any country to see its details</p>
+
+    <!-- Search field -->
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="e.g. Pakistan, Japan, Brazil" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Last 3 searches (saved in localStorage) -->
+    <div class="recent-wrap">
+      <span>Recent:</span>
+      <div id="recent"></div>
+    </div>
+
+    <!-- Loading spinner -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Error message -->
+    <p id="error" class="error hidden"></p>
+
+    <!-- Result card -->
+    <section id="result" class="result hidden"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
